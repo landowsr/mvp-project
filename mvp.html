@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NBA Scheduler</h1>
+    <div id="selector">
+    <h2>Please Select a Team:</h2>
+    </div>
+    <div class="container">
+            <div class="element" onClick="fireEvent(this.id)" id="atlanta_hawks">Atlanta Hawks<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/400px-Atlanta_Hawks_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="boston_celtics">Boston Celtics<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/400px-Boston_Celtics.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="brooklyn_nets">Brooklyn Nets<br/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/340px-Brooklyn_Nets_newlogo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="charlotte_hornets">Charlotte Hornets<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Charlotte_Hornets_%282014%29.svg/420px-Charlotte_Hornets_%282014%29.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="chicago_bulls">Chicago Bulls<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/400px-Chicago_Bulls_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="cleveland_cavs">Cleveland Cavaliers<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Cleveland_Cavaliers_logo.svg/220px-Cleveland_Cavaliers_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="dallas_mavericks">Dallas Mavericks<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/400px-Dallas_Mavericks_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="denver_nuggets">Denver Nuggets<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/400px-Denver_Nuggets.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="detroit_pistons">Detroit Pistons<br/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pistons_logo17.svg/400px-Pistons_logo17.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="golden_state_warriors">Golden State Warriors<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/400px-Golden_State_Warriors_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="houston_rockets">Houston Rockets<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/320px-Houston_Rockets.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="indiana_pacers">Indiana Pacers<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/400px-Indiana_Pacers.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="los_angeles_clippers">Los Angeles Clippers<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/400px-Los_Angeles_Clippers_%282015%29.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="los_angeles_lakers">Los Angeles Lakers <br/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/480px-Los_Angeles_Lakers_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="memphis_grizzlies">Memphis Grizzlies<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/380px-Memphis_Grizzlies.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="miami_heat">Miami Heat<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/400px-Miami_Heat_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="milwaukee_bucks">Milwaukee Bucks<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/360px-Milwaukee_Bucks_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="minnesota_timberwolves">Minnesota Timberwolves<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Minnesota_Timberwolves_logo.svg/400px-Minnesota_Timberwolves_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="new_orleans_pelicans">New Orleans Pelicans<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/New_Orleans_Pelicans_logo.svg/440px-New_Orleans_Pelicans_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="new_york_knicks">New York Knicks<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/480px-New_York_Knicks_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="oklahoma_city_thunder">Oklahoma City Thunder<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/400px-Oklahoma_City_Thunder.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="orlando_magic">Orlando Magic<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/460px-Orlando_Magic_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="philadelphia_76ers">Philadelphia 76ers<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/400px-Philadelphia_76ers_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="phoenix_suns">Phoenix Suns<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Phoenix_Suns_logo.svg/380px-Phoenix_Suns_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="portland_blazers">Portland Trail Blazers<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/440px-Portland_Trail_Blazers_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="sacramento_kings">Sacramento Kings<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/360px-SacramentoKings.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="san_antonio_spurs">San Antonio Spurs<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/480px-San_Antonio_Spurs.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="toronto_raptors">Toronto Raptors<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/400px-Toronto_Raptors_logo.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="utah_jazz">Utah Jazz<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utah_Jazz_logo_%282016%29.svg/460px-Utah_Jazz_logo_%282016%29.svg.png" /></div>
+            <div class="element" onClick="fireEvent(this.id)" id="washington_wizards">Washington Wizards<br/> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/400px-Washington_Wizards_logo.svg.png" /></div>
+    </div>
+    <div class="container2">
+        <h2 id="selected"></h2>
+        <h2 id="teams"></h2>
+        <h2 id="names"></h2>
+    </div>
+    <script>
+        var teamObject = {
+            "atlanta_hawks":['Brooklyn Nets', 'Trae Young'],
+            "boston_celtics":['Atlanta Hawks', 'Jayson Tatum'],
+            "charlotte_hornets":['Boston Celtics', 'Lamelo Ball'],
+            "chicago_bulls":['Charlotte Hornets', 'Zach Lavine'],
+            "cleveland_cavs":['Chicago Bulls', 'Darius Garland'],
+            "dallas_mavericks":['Cleveland Cavs', 'Luka Doncic'],
+            "denver_nuggets":['Dallas Mavericks', 'Nikola Jokic'],
+            "detroit_pistons":['Denver Nuggets', 'Jerami Grant'],
+            "golden_state_warriors":['Detroit Pistons', 'Stephen Curry'],
+            "houston_rockets":['Golden State Warriors', 'Christian Wood'],
+            "indiana_pacers":['Houston Rockets', 'Domantis Sabonis'],
+            "los_angeles_clippers":['Indiana Pacers', 'Paul George'],
+            "los_angeles_lakers":['Los Angeles Clippers', 'Lebron James'],
+            "memphis_grizzlies":['Los Angeles Lakers', 'Ja Morant'],
+            "miami_heat":['Memphis Grizzlies', 'Jimmy Butler'],
+            "milwaukee_bucks":['Miami Heat', 'Giannis Antetokoumpo'],
+            "minnesota_timberwolves":['New Orleans Pelicans', 'Karl Anthony-Towns'],
+            "new_orleans_pelicans":['Minnesota Timberwolves', 'Zion Williamson'],
+            "new_york_knicks":['Oklahoma City Thunder', 'Julius Randle'],
+            "oklahoma_city_thunder":['New York Knicks', 'Shai Gilgeous-Alexander'],
+            "orlando_magic":['Philadelphia 76ers', 'Cole Anthony'],
+            "philadelphia_76ers":['Orlando Magic', 'Joel Embiid'],
+            "phoenix_suns":['Portland Blazers', 'Devin Booker'],
+            "portland_blazers":['Phoenix Suns', 'Damian Lillard'],
+            "sacramento_kings":['San Antonio Spurs', 'Dearon Fox'],
+            "san_antonio_spurs":['Sacramento Kings', 'Dejonte Murray'],
+            "toronto_raptors":['Utah Jazz', 'Pascal Siakam'],
+            "utah_jazz":['Toronto Raptors', 'Donovan Mitchell'],
+            "washington_wizards":['Brooklyn Nets', 'Rui Hachimura'],
+            "brooklyn_nets":['Washington Wizards', 'Kevin Durant'],
+    }
+        function fireEvent(id){
+            // alert('hello ' + id);
+            var selected = document.getElementById("selected");
+            var teams = document.getElementById("teams");
+            var names = document.getElementById("names");
+            // var content = document.createTextNode("You Selected: " + id);
+            
+            selected.textContent = "You Selected: " + id;
+            teams.textContent = id + " play " + teamObject[id][0];
+            
+            names.textContent = id + " best player: " + teamObject[id][1];
+            
+
+            
+        }
+    </script>
+    
+</body>
+<style>
+    .element {
+        text-align: center;
+        width: 30%;
+        border: 1px solid black;
+        margin: 1%;
+        height: 30%;
+        padding: 0;
+    }
+
+    .element:hover {
+        background-color: aqua;
+        opacity: 0.65;
+        cursor: pointer;
+    }
+
+    #selector{
+        /* height: 60vh; */
+        width: 100vh;
+        margin: 0 auto;
+        margin-top: 10vh;
+        
+    }
+
+    #selected {
+        
+        /* height: 60vh; */
+        width: 100vh;
+        margin: 0 auto;
+        /* margin-top: 10vh; */
+        
+    }
+    
+    #teams{
+        
+        /* height: 60vh; */
+        width: 100vh;
+        margin: 0 auto;
+        /* margin-top: 10vh; */
+        
+    }
+
+    #names {
+        
+        /* height: 60vh; */
+        width: 100vh;
+        margin: 0 auto;
+        /* margin-top: 10vh; */
+        
+    }
+
+    img {
+        margin: auto;
+        height: 50%;
+        width: 50%;
+        margin-top:7%;
+    }
+
+    .container {
+        height: 60vh;
+        width: 100vh;
+        border: 1px solid black;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        /* margin-top: 10vh; */
+    }
+</style>
+</html>
