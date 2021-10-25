@@ -83,15 +83,16 @@
     }
         function fireEvent(id){
             // alert('hello ' + id);
+            var add_spaces_id = id.replace('_', ' ').toUpperCase();
             var selected = document.getElementById("selected");
             var teams = document.getElementById("teams");
             var names = document.getElementById("names");
             // var content = document.createTextNode("You Selected: " + id);
             
-            selected.textContent = "You Selected: " + id;
-            teams.textContent = id + " play " + teamObject[id][0];
+            selected.textContent = "You Selected: " +  add_spaces_id;
+            teams.textContent =  add_spaces_id + " play " + teamObject[id][0].toUpperCase();
             
-            names.textContent = id + " best player: " + teamObject[id][1];
+            names.textContent =  add_spaces_id + " best player: " + teamObject[id][1].toUpperCase();
             
 
             
