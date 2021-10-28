@@ -49,6 +49,17 @@
         <h2 id="names"></h2>
     </div>
     <script>
+        function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    console.log(xmlHttp.responseText);
+    return xmlHttp.responseText;
+}
+
+// httpGet('http://localhost:3000/api_img');
+httpGet('https://api-test-10065.herokuapp.com/api_img');
         var teamObject = {
             "atlanta_hawks":['Brooklyn Nets', 'Trae Young'],
             "boston_celtics":['Atlanta Hawks', 'Jayson Tatum'],
