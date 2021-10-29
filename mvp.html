@@ -52,14 +52,14 @@
         function httpGet(theUrl)
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( {'key':'test'} );
     console.log(xmlHttp.responseText);
     return xmlHttp.responseText;
 }
 
-// httpGet('http://localhost:3000/api_img');
-httpGet('https://api-test-10065.herokuapp.com/api_img');
+// httpGet('http://localhost:3000/api_img?key=12d8f908040b474c924cd8ead1dd0402&search=Sacramento+Kings+logo');
+httpGet('https://api-test-10065.herokuapp.com/api_img?key=12d8f908040b474c924cd8ead1dd0402&search=Sacramento+Kings+logo');
         var teamObject = {
             "atlanta_hawks":['Brooklyn Nets', 'Trae Young'],
             "boston_celtics":['Atlanta Hawks', 'Jayson Tatum'],
