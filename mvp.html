@@ -50,17 +50,17 @@
     </div>
     <script>
         
-        function httpGet(theUrl)
+        function fireHttpGetRequest(endpoint)
             {
                 var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "GET", theUrl, false );
+                xmlHttp.open( "GET", endpoint, false );
                 xmlHttp.send();
                 return JSON.parse(xmlHttp.responseText);
             }
 
 
 
-            var teamObject = httpGet('https://teamservice.herokuapp.com/');
+            var teamObject = fireHttpGetRequest('https://teamservice.herokuapp.com/');
             console.log(teamObject);
 
     
