@@ -48,8 +48,11 @@
         <h2 id="teams"></h2>
         <h2 id="names"></h2>
     </div>
+    <h6>All Images used from https://upload.wikimedia.org/ No Copyright intended.</h6>
     <script>
         
+        // this function takes in an endpoint and fires off an HTTP Request to the teammate endpoint at https://teamservice.herokuapp.com/
+        // returns an object with NBA Team Data. 
         function fireHttpGetRequest(endpoint)
             {
                 var xmlHttp = new XMLHttpRequest();
@@ -63,7 +66,8 @@
             var teamObject = fireHttpGetRequest('https://teamservice.herokuapp.com/');
             console.log(teamObject);
 
-    
+        // this function takes in an id and displays the reformatted ID, the ID's opponent from the teamObject, and
+        // the ID's best player.
         function fireEvent(id){
             var add_spaces_id = id.replace('_', ' ').toUpperCase();
             var selected = document.getElementById("selected");
