@@ -76,8 +76,11 @@
             
             selected.textContent = "You Selected: " +  add_spaces_id;
             teams.textContent =  add_spaces_id + " play " + teamObject.teams[id]['firstGame']['opponent'];
+
+            var name_1 = teamObject.teams[id]['roster'][0]['firstName'].toUpperCase();
+            var name_2 = teamObject.teams[id]['roster'][0]['lastName'].toUpperCase();
             
-            names.textContent =  add_spaces_id + " best player: " + teamObject.teams[id]['roster'][0]['firstName'].toUpperCase() + ' ' + teamObject.teams[id]['roster'][0]['lastName'].toUpperCase();;
+            names.textContent =  add_spaces_id + " best player: " + name_1 + ' ' + name_2;
             
             
 
