@@ -28,7 +28,8 @@ app.get('/api_img', (req, res) => {
 async function img_request(req) {
     try {
     
-        let result = await axios.get(`https://api.bing.microsoft.com/v7.0/images/search?q=${req.query.search}`, { headers: { "Ocp-Apim-Subscription-Key": req.query.key }});
+        let result = await axios.get(`https://api.bing.microsoft.com/v7.0/images/search?q=${req.query.search}`,
+         { headers: { "Ocp-Apim-Subscription-Key": req.query.key }});
         let data = result.data;
         console.log(req.query);
         console.log(data.value[0].contentUrl);
